@@ -1,12 +1,14 @@
 module.exports = {
   mode: 'jit',
   purge: [
+    "./node_modules/flowbite-react/**/*.js",
     './public/**/*.html',
     './src/**/*.{js,jsx,ts,tsx,vue}',
   ],
-  theme: {
-    extend: {},
-  },
+  theme: {},
   variants: {},
-  plugins: [],
+  plugins: [
+    require("flowbite/plugin"),
+  ],
+  darkMode: 'class',
 }
