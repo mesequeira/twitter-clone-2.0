@@ -1,10 +1,10 @@
+import Navbar from '@/common/components/Navigation/Navigation'
 import React from 'react'
+import '@/assets/styles/global.css'
 
 const page = () => {
     return (
-        <div>
-            Este es mi Home
-        </div>
+        <Navbar />
     )
 }
 
